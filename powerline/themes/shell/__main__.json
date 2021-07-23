@@ -1,0 +1,32 @@
+{
+    "segment_data": {
+            "hostname": {
+                    "args": {
+                            "only_if_ssh": true
+                    }
+            },
+            "cwd": {
+                    "args": {
+                            "dir_limit_depth": 1
+                    }
+            },
+            "gitstatus": {
+                "args": {
+                    "use_dash_c": false,
+                    "show_tag": "exact",
+                    "formats": {
+                        "branch": "\ue0a0 {}",
+                        "tag": " ★ {}",
+                        "behind": " ↓ {}",
+                        "ahead": " ↑ {}",
+                        "staged": " ● {}",
+                        "unmerged": " ✖ {}",
+                        "changed": " ✚ {}",
+                        "untracked": " … {}",
+                        "stashed": " ⚑ {}"
+                    },
+                    "detached_head_style": "ref"
+                }
+            }
+    }
+}
